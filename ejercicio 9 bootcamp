@@ -1,0 +1,80 @@
+public class ejerciciotema9 {
+
+    public static void main(String[] args) {
+        Cliente Marcos = new Cliente();
+        Marcos.setEdad(35);
+        Marcos.setNombre("Marcos");
+        Marcos.setCredito(590000);
+        Marcos.setTelefono(547987);
+
+        System.out.println(
+                Marcos.getNombre() + "  " + Marcos.getEdad() + " " + Marcos.getTelefono() + "  " + Marcos.getCredito());
+
+        Trabajador Maria = new Trabajador();
+        Maria.setEdad(27);
+        Maria.setNombre("Maria");
+        Maria.setSalario(487153);
+        Maria.setTelefono(45678154);
+
+        System.out.println(
+                Maria.getNombre() + "  " + Maria.getEdad() + " " + Maria.getTelefono() + "  " + Maria.getSalario());
+
+    }
+
+}
+
+class Persona {
+    private int edad;
+    private String nombre;
+    private int telefono;
+
+    public void setEdad(int edad) {
+        this.edad = edad;
+    }
+
+    public int getEdad() {
+        return this.edad;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
+    public String getNombre() {
+        return this.nombre;
+    }
+
+    public void setTelefono(int telefono) {
+        this.telefono = telefono;
+    }
+
+    public int getTelefono() {
+        return this.telefono;
+    }
+
+}
+
+final class Cliente extends Persona {
+    int credito;
+
+    public void setCredito(int credito) {
+        this.credito = credito;
+    }
+
+    public int getCredito() {
+        return this.credito;
+    }
+
+}
+
+final class Trabajador extends Persona {
+    int salario;
+
+    public void setSalario(int salario) {
+        this.salario = salario;
+    }
+
+    public int getSalario() {
+        return this.salario;
+    }
+}
