@@ -1,0 +1,81 @@
+//Usando un if, crear una condición que compare si la variable numeroIf es positivo, negativo, o 0.
+
+function comparar(numeroif) {
+  if (numeroif < 0) {
+    console.log("Este numero es negativo");
+  } else if (numeroif > 0) {
+    console.log("Este numero es positivo");
+  } else {
+    console.log("Este numero es cero");
+  }
+}
+
+comparar(5);
+comparar(-8);
+comparar(0);
+
+//Crea un bucle While, este bucle tendrá que tener como condición que la variable numeroWhile sea inferior a 3, el bloque de código que tendrá el bucle deberá: Incrementar el valor de la variable en uno cada vez que se ejecute. Mostrarlo por pantalla cada vez que se ejecute.
+
+function bucle(numeroWhile) {
+  const x = 0;
+  console.log("aca empieza el ciclo while");
+
+  while (numeroWhile < 3) {
+    console.log(numeroWhile++);
+  }
+}
+
+bucle(-1);
+
+//Para el bucle Do While, deberás crear la misma estructura que en el While, pero solo se debe ejecutar una vez.
+function dowhileFunction(numeroWhile) {
+  console.log("aca empieza el ciclo do-while");
+  do {
+    numeroWhile;
+
+    console.log(numeroWhile++);
+  } while (numeroWhile < 3);
+}
+
+dowhileFunction(-1);
+
+function buclefor(numeroFor) {
+  console.log("aca empieza el ciclo for");
+  for (numeroFor = 0; numeroFor < 3; numeroFor++) {
+    console.log(numeroFor);
+  }
+}
+
+buclefor();
+
+//Por último, para el Switch, deberás crear la variable estacion, y distintos case para las cuatro estaciones del año. Dependiendo del valor de la variable estacion se deberá mandar un mensaje por consola informando de la estación en la que está. También habrá que poner un default para cuando el valor de la variable no sea una estación.
+
+console.log("aca comienza el ciclo estaciones");
+
+function switchFuntcion(estacion) {
+  switch (estacion) {
+    case 1:
+      estacion = "Verano";
+      break;
+    case 2:
+      estacion = "Inverno";
+      break;
+    case 3:
+      estacion = "otoño";
+      break;
+    case 4:
+      estacion = "primavera";
+      break;
+    default:
+      estacion = "no es una estación";
+      break;
+  }
+
+  console.log(estacion);
+}
+
+switchFuntcion(1);
+switchFuntcion(2);
+switchFuntcion(3);
+switchFuntcion(4);
+switchFuntcion(80);
