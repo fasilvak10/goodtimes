@@ -1,0 +1,41 @@
+public class App {
+    public static void main(String[] args) throws Exception {
+        Coche coche = new Coche();
+        System.out.println(coche.velocidadActual);
+        coche.acelerar();
+        System.out.println(coche.velocidadActual);
+        coche.decelerar();
+
+        Coche coche2 = new Coche();
+        System.out.println(coche2.numeroDePuertas);
+        coche2.puertas();
+        System.out.println(coche2.numeroDePuertas);
+
+    }
+
+}
+
+class Coche {
+    int numeroDePuertas = 4;
+    int velocidadMaxima;
+    float velocidadActual;
+
+    public Coche() {
+        numeroDePuertas = 5;
+        velocidadActual = 120;
+        System.out.println("estoy en constructor");
+    }
+
+    public void acelerar() {
+        velocidadActual += 15;
+    };
+
+    public void decelerar() {
+
+    }
+
+    public void puertas() {
+        numeroDePuertas += 1;
+    }
+
+}
